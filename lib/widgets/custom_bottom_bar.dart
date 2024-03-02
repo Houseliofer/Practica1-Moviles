@@ -22,7 +22,9 @@ class CustomBottomBar extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.popAndPushNamed(context, '/main');
+              },
               icon: const Icon(
                 Icons.house,
                 size: 36,
